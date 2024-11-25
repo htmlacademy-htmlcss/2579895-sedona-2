@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия  Огородникова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2579895).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Вайнруб] (https://htmlacademy.ru/profile/id166797).
 
 ---
 
