@@ -2,7 +2,7 @@
 
 * Студент: [Анастасия  Огородникова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2579895).
 * Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
-
+*Сайт*[Мой проект Седона](https://ogorodnikovanastya.github.io/2579895-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
