@@ -709,10 +709,14 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  flex-direction: row;
   line-height: 50px;
   margin: 0 auto;
+
+  justify-content: space-between;
 }
+
+
+
 
 .social-list {
   display: -webkit-box;
@@ -772,11 +776,6 @@ body {
   background: url("../images/yt-icon.svg") no-repeat;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .contact {
   text-align: center;
