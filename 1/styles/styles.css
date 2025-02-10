@@ -232,7 +232,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   background: bottom url("../images/shape.svg") no-repeat, 100% url("../images/background.jpg") no-repeat;
-  background-color: rgba(148, 45, 31, 0.435);
+  background-size: auto, cover;
+  background-color: rgba(186, 222, 243, 0.435);
   margin-bottom: 70px;
 }
 
@@ -368,18 +369,33 @@ body {
 
 }
 
+
 .advantages-item {
-  background: #82b3d3;
   width: 33.33%;
-  height: 384px;
+  min-height: 384px;
 
   display: flex;
+
+  background: rgba(131, 179, 211, 0.2);
 }
+
+.advantages-item:nth-child(even) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+
 
 .advantages-item-big {
   width:100%;
   display: flex;
+  background: #82b3d3;
 }
+
+
+
+
+
+
 
 .advantage-content {
   display: flex;
@@ -398,13 +414,6 @@ body {
 }
 
 
-.advantages-light {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-dark {
-  background: rgba(131, 179, 211, 0.2);
-}
 
 
 
@@ -435,6 +444,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .reasons-item {
@@ -445,8 +460,9 @@ body {
   min-height: 385px;
 }
 
+
 .reasons-item:nth-child(1) {
-  background: rgba(131, 179, 211, 0.12) center 80px url("../images/icon-1.svg") no-repeat;
+  background: center 80px url("../images/icon-1.svg") no-repeat;
 }
 
 .reasons-item:nth-child(2) {
@@ -454,7 +470,11 @@ body {
 }
 
 .reasons-item:nth-child(3) {
-  background: rgba(131, 179, 211, 0.12) center 80px url("../images/icon-3.svg") no-repeat;
+  background: center 80px url("../images/icon-3.svg") no-repeat;
+}
+
+.reasons-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .reason-title {
@@ -1053,6 +1073,7 @@ footer {
 
 .from {
   position: relative;
+
 }
 
 .from::after {
@@ -1073,7 +1094,9 @@ footer {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  width: 103px;
+
+  padding-right: 40px;
+  width: 83px;
 }
 
 .to {
@@ -1097,7 +1120,9 @@ footer {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  width: 103px;
+
+  padding-right: 40px;
+  width: 83px;
 }
 
 .form-from:focus,
@@ -1485,7 +1510,7 @@ footer {
   border-radius: 4px;
   background: #82b3d3;
   color: #ffffff;
-  padding: 8px 10px;
+  padding: 8px 8px;
 }
 
 .card-button:hover {
@@ -1591,17 +1616,17 @@ footer {
 
 .four-stars {
   background: url("../images/star-4.svg") no-repeat;
-  background-size:contain;
+  width: 100%;
 }
 
 .three-stars {
-  background: url("../images/star-3.svg") no-repeat;
-  background-size: contain;
+  background: url("../images/star-4.svg") no-repeat;
+  width: 50%;
 }
 
 .two-stars {
-  background: url("../images/star-2.svg") no-repeat;
-  background-size: contain;
+  background: url("../images/star-4.svg") no-repeat;
+  width: 30%;
 }
 
 
@@ -1616,6 +1641,14 @@ footer {
   margin-bottom: 40px;
   padding: 0;
   list-style: none;
+
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .pagination-link {
@@ -1913,6 +1946,10 @@ footer {
   align-items: baseline;
   margin-bottom: 5px;
 
+  position: relative;
+}
+
+.date-form-wrapper {
   position: relative;
 }
 

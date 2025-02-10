@@ -82,7 +82,7 @@
                             <img class="advantage-img" src="images/reason-1.jpg" alt="Дома в Седоне">
                         </li>
 
-                        <li class="advantages-item advantages-light">
+                        <li class="advantages-item">
                             <div class="advantage-content">
                                 <h3 class="advantage-title">Небольшая<br> площадь</h3>
                                 <p class="advantage-description">Все достопримечательности<br> находятся очень близко
@@ -90,14 +90,16 @@
                             </div>
                         </li>
 
-                        <li class="advantages-item advantages-dark">
+
+                        <li class="advantages-item">
                             <div class="advantage-content">
                                 <h3 class="advantage-title">Красивая<br> дорога</h3>
                                 <p class="advantage-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+
                             </div>
                         </li>
 
-                        <li class="advantages-item advantages-light">
+                        <li class="advantages-item">
                             <div class="advantage-content">
                                 <h3 class="advantage-title">Мало<br> туристов</h3>
                                 <p class="advantage-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
@@ -138,7 +140,6 @@
                             <p class="reason-description">Не только китайского,<br> но и настоящего местного<br>
                                 производства!</p>
                         </li>
-
                     </ul>
                 </section>
 
@@ -156,8 +157,7 @@
                     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                         <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
                         <input class="subscribe-input" type="text" id="subscribe-email" name="user-email"
-                            placeholder="Ваш e-mail"></input>
-                        <button type="button" class="subscribe-calendar-button"></button>
+                            placeholder="Ваш e-mail">
                         <button class="subscribe-btn" type="submit">Подписаться</button>
                     </form>
 
@@ -208,21 +208,27 @@
                         <h2 class="modal-content-title">Поиск гостиницы в Седоне</h2>
                         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
                             <div class="date-wrapper">
-                                <label class="date-form">
-                                    Дата Заезда:
-                                    <input class="form-typefield" type="text" id="arrival-date" name="arrival-date"
-                                        placeholder="27 апреля 2020" required>
-                                    <button type="button" class="calendar-button"></button>
 
-                                </label>
+                                <div class="date-form-wrapper">
+                                    <label class="date-form">
+                                        Дата Заезда:
+                                        <input class="form-typefield" type="text" id="arrival-date" name="arrival-date"
+                                            placeholder="27 апреля 2020" required>
+                                    </label>
+                                    <button type="button" class="calendar-button"></button>
+                                </div>
+
                                 <p class="tip warning">Мы не можем отправить вас в прошлое.</p>
-                                <label class="date-form">
-                                    Дата Выезда:
-                                    <input class="form-typefield" type="text" id="departure-date" name="departure-date"
-                                        placeholder="1 сентября 2023" required>
-                                    <button type="button" class="calendar-button"></button>
 
-                                </label>
+                                <div class="date-form-wrapper">
+                                    <label class="date-form">
+                                        Дата Выезда:
+                                        <input class="form-typefield" type="text" id="departure-date"
+                                            name="departure-date" placeholder="1 сентября 2023" required>
+
+                                    </label>
+                                    <button type="button" class="calendar-button"></button>
+                                </div>
                                 <p class="tip notice">На эти даты есть свободные номера. Пока есть.</p>
                             </div>
 
