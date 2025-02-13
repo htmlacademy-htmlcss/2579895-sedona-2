@@ -1052,7 +1052,7 @@ body {
 
 .form-from,
 .form-to {
-  font-family: "PT Sans";
+  font-family: "PT Sans",sans-serif;
   padding: 12px 20px;
   background: #f2f2f2;
   border: none;
@@ -1443,7 +1443,7 @@ body {
 }
 
 .card-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   text-decoration: none;
   text-align: center;
   margin: 0;
