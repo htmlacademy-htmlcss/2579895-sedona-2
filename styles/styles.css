@@ -108,7 +108,6 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  height: 64px;
   -webkit-box-align: inherit;
   -ms-flex-align: inherit;
   align-items: inherit;
@@ -705,7 +704,6 @@ body {
 
 .social-link {
   display: inline-block;
-  opacity: 0.7;
   width: 50px;
   height: 40px;
 }
@@ -986,11 +984,15 @@ body {
   margin-left: 38px;
 }
 
-.controls:hover .control-input:not(:disabled) ~ .control-text {
-  opacity: 0.3;
+.controls:hover .control-input:not(:disabled) ~ .control-text,
+.controls:hover .control-input:not(:disabled) ~ .control-mark-checkbox,
+.controls:hover .control-input:not(:disabled) ~ .control-mark-radio {
+  opacity: 0.6;
 }
 
-.controls:active .control-input:not(:disabled) ~ .control-text {
+.controls:active .control-input:not(:disabled) ~ .control-text,
+.controls:active .control-input:not(:disabled) ~ .control-mark-checkbox,
+.controls:active .control-input:not(:disabled) ~ .control-mark-radio {
   opacity: 0.3;
 }
 
@@ -998,7 +1000,6 @@ body {
 .control-input:focus + .control-mark-radio {
   outline: 3px solid #83b3d3;
 }
-
 
 .control-input:disabled ~ .control-mark-checkbox {
   background-color: #b4b4b4;
@@ -1124,7 +1125,8 @@ body {
 }
 
 .range-toggle:hover {
-  background-color: #e5e5e5;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus {
@@ -1406,7 +1408,7 @@ body {
 }
 
 .catalog-card-title-link:focus {
-  outline: 3px solid #83b3d3;
+  outline: 2px solid #68A2CA;
 }
 
 .catalog-card-img {
@@ -1753,25 +1755,17 @@ body {
 .tooltip {
   position: relative;
   margin-left: 10px;
-  width: 26px;
-  height: 26px;
 }
 
 .tooltip-toggle {
   border: none;
   height: 26px;
-  padding: 0;
+  width: 26px;
   margin: 0;
   display: block;
   border-radius: 50%;
   background: url("../images/notice.svg") no-repeat;
   background-size: cover;
-}
-
-.tooltip-icon {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
 }
 
 .tooltip-text {
